@@ -16,15 +16,15 @@
 }
 .menu {
   &__list {
-    display: flex;   
+    display: flex;
   }
   &__list-item + .menu__list-item{
     padding-left: 35px;
   }
   &__list-link {
     color: $title;
-    @extend %roboto-400;    
-    padding-bottom: 0 12px 1px;   
+    @extend %roboto-400;
+    padding-bottom: 0 12px 1px;
     text-transform: uppercase;
     transition: all .2s;
     &:hover {
@@ -39,15 +39,15 @@
     }
   }
 }
-.user-nav {  
-  display: flex; 
+.user-nav {
+  display: flex;
   &__link {
-    position: relative;    
+    position: relative;
   }   
   &__link + .user-nav__link {
     padding-left: 25px;
   }
-  &__num {    
+  &__num {
     position: absolute;
     top: -9px;
     right: -14px;
@@ -63,11 +63,11 @@
 }
 
 .top-slider {
-  background-image: url('../images/top-slider-bg.png');
+  background-image: url('../images/decor/top-slider-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $bg;
-  padding-top: 65px 0 45px; 
+  padding: 65px 0 45px;
   &__container {
     max-width: 1560px;
     padding: 0 10px;
@@ -79,7 +79,7 @@
   }
   &__item-content {
     padding-top: 125px;
-    padding-left: 175px;    
+    padding-left: 175px;
   }
   &__item-title{
     max-width: 670px;
@@ -103,8 +103,8 @@
     margin-top: -70px;
 }
   .slick-dots li {
-    display: inline-block; 
-    padding: 0 5px; 
+    display: inline-block;
+    padding: 0 5px;
     line-height: 0;
 }
   .slick-dots button {
@@ -115,8 +115,8 @@
     padding: 0;
     border: none;
     border: 1px solid transparent;
-    background-color: transparent;   
-    position: relative; 
+    background-color: transparent;
+    position: relative;
     &::after {
       content: '';
       position: absolute;
@@ -129,15 +129,127 @@
       background-color: $default;
     }
   }
-   .slick-active button {    
-      border-color: $accent;
-      &::after {      
+  .slick-active button {
+    border-color: $accent;
+    &::after {
       background-color: $accent;
-      }
-    
-  }
-  
+      }    
+   }  
 }
+
+.categories-info {
+  padding: 120px 0;
+  background-image: url('../images/decor/categories-bg-1.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  &__inner {
+    background-image: url('../images/decor/categories-bg-2.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+}
+.info {
+  display: flex;
+  justify-content: space-between;  
+  margin-bottom: 110px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -45px;
+    left: -45px;
+    width: 120px;
+    height: 120px;
+    z-index: -1;
+    background-image: url('../images/decor/decor-1.svg');
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    right: -22px;
+    bottom: -22px;
+    width: 65px;
+    height: 52px;
+    z-index: -1;
+    background-image: url('../images/decor/decor-2.svg');
+  }
+  &__item {
+    width: 370px;
+    background-color: #fff;
+    padding: 60px 30px;
+    box-shadow: 20px 0px 60px 0px rgba(202, 202, 202, 0.35);
+  }
+  &__item-title {
+    color: $title;
+    @extend %roboto-400;
+    font-size: 22px;
+    line-height: 26px;
+    margin: 35px 0 10px;
+  }
+}
+.categories {
+  &__items {
+    display: grid;
+    min-height: 635px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  &__item {
+    padding: 35px 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    &:nth-child(1) {
+      grid-row: span 2;
+      padding: 40px;
+      .categories__item-subtitle,
+      .categories__item-link:hover {
+        color: #5800e4;
+      }
+    }
+    &:nth-child(2) {
+      grid-column: span 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 0;
+      .categories__item-subtitle,
+      .categories__item-link:hover {
+        color: $accent;
+      }
+    }
+    &:nth-child(3) {     
+      .categories__item-subtitle,
+      .categories__item-link:hover {
+        color: #ffb534;
+      }
+    }
+    &:nth-child(4) {     
+      .categories__item-subtitle,
+      .categories__item-link:hover {
+        color: #34c3ff;
+      }
+    }
+    &-subtitle {
+      margin-bottom: 5px;
+    }
+    &-title {
+      color: $title;
+      @extend %roboto-500;
+      font-size: 22px;
+      line-height: 26px;
+      margin-bottom: 16px;
+    }
+    &-link {
+      color: $title;
+      @extend %roboto-400;
+      text-transform: uppercase;
+      transition: all .3s;
+    }
+  }
+}
+
 
 
 
@@ -152,26 +264,26 @@
 
 .footer {
   padding: 145px 0 30px;
-  background-color: $bg;  
+  background-color: $bg;
 }
 .footer-top {
-  display: flex;  
+  display: flex;
   border-bottom: 1px solid #ececec;
   padding: 70px 0 40px;
-  &__logo {    
+  &__logo {
     display: block;
     margin-bottom: 33px;
   }
   &__address,
   &__email,
-  &__phone {    
+  &__phone {
     margin-bottom: 14px;
-    display: block;    
+    display: block;
   }
   &__social-list {
-    display: flex; 
-    align-items: center;   
-    margin-top: 35px;    
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
   }
   &__social-item + .footer-top__social-item {
     margin-left: 18px;
@@ -183,7 +295,7 @@
     }
     &:hover {
       path {
-      fill: $accent;
+        fill: $accent;
     }
   }    
 } 
@@ -196,18 +308,18 @@
   }
   &__contact {
     width: 250px;
-    margin-right: 50px;    
+    margin-right: 50px;
   }  
   &__nav {
-    width: 170px;    
-    margin-right: 30px;    
+    width: 170px;
+    margin-right: 30px;
   }
   &__link {
     display: block;
     margin-bottom: 14px;
   }
   &__item-form {
-    max-width: 470px;    
+    max-width: 470px;
   }
   &__text {
     margin-bottom: 25px;
@@ -226,9 +338,9 @@
       line-height: 36px;
     }
   }
-  &__form-btn {    
-    @extend %btn;   
-        
+  &__form-btn {
+    @extend %btn;
+
   }
 }
 .footer-bottom {
@@ -236,7 +348,7 @@
   line-height: 24px;
   margin-top: 25px;
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;
   &__accept {
     display: flex;
     align-items: center;

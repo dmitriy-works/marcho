@@ -12,13 +12,26 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 .main {
   flex-grow: 1;
 }
-
 .container {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.title {
+  color: $title;
+  @extend %roboto-700;
+  font-size: 48px;
+  line-height: 65px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.text {
+  max-width: 570px;
+  text-align: center;
+  margin: 0 auto 55px;
 }
