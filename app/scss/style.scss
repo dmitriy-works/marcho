@@ -249,6 +249,52 @@
     }
   }
 }
+.video-fashion {
+  padding: 115px 0;
+  background-color: $bg;
+  background-image: url('../images/fashion-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  margin-bottom: 120px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+  }
+  &__popup {    
+    background-repeat: no-repeat;
+    background-position: right center;
+    max-width: 530px;
+    width: 100%;
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 60px;
+  }
+  &__content {
+    max-width: 570px;
+  }
+  &__subtitle {
+    color: $accent;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  &__title {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  &__text {
+    margin-bottom: 55px;
+  }
+  &__link {
+    @extend %btn;
+  }
+}
 
 
 
