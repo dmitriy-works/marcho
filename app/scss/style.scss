@@ -442,8 +442,7 @@
     font-size: 48px;
     margin: 10px 0 7px;    
    } 
-  }
-  
+  }  
   &__subtitle {
     color: $accent;
     font-size: 22px;
@@ -466,6 +465,103 @@
     align-items: center;
   }
 }
+.blog {
+  padding: 50px 0 160px;
+  background-image: url('../images/blog-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;   
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    &::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: -20px;
+    width: 126px;
+    height: 53px;
+    background-image: url('../images/decor/decor-3.svg');
+    background-repeat: no-repeat;
+    z-index: -2;
+    }
+  }  
+  &__item {
+    max-width: 370px;
+    width: 100%;
+    border: 1px solid #ececec; 
+    transition: all .3s;
+    &:hover {
+      border: none;
+      box-shadow: 20px 0px 60px 0px rgba(202, 202, 202, 0.35);
+      .blog__item-link {
+        color: $accent;
+        &::after {
+          background-image: url('../images/arrow-accent.svg');
+          background-repeat: no-repeat;
+        }
+      }  
+    }   
+  }
+
+  &__item-box {
+    padding: 30px 40px;
+  }
+  &__item-info {
+    display: flex;
+    justify-content: space-between;    
+    margin-bottom: 20px;    
+  }
+  &__item-author,
+  &__item-date {
+    padding-left: 30px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 0;
+      width: 20px;
+      height: 20px;      
+    }
+  }
+  &__item-author {
+    background-image: url('../images/user-block.svg');
+    background-repeat: no-repeat;
+  }
+  &__item-date {
+      background-image: url('../images/time.svg');
+      background-repeat: no-repeat;
+    }
+    &__item-imglink {    
+    display: block;    
+    img {      
+      min-height: 288px;
+    }
+  }
+  &__item-title {
+    color: $title;
+    @extend %roboto-400;
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+  &__item-link {
+    position: relative;
+  }
+  &__item-link::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 8px;
+    top: 7px;
+    right: -14px;    
+  }
+  
+}
+
+
+
 
 
 
