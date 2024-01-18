@@ -42,3 +42,47 @@ body {
 .header--404--page {
   background-color: $bg;
 }
+
+.pagination {
+  display: flex;  
+  align-items: center;  
+  padding: 30px 0;
+  .pagination__list {
+    display: flex; 
+    padding: 0 35px;
+  }
+  &__list-item {
+    padding: 0 15px;
+  }
+  &__list-link--active {
+    color: $accent;
+  }
+  &__arrows {    
+    text-transform: uppercase;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 5px;
+      height: 10px;
+      top: 8px;     
+    }
+  }  
+  &__prev {    
+    padding-left: 15px;    
+    &::before {      
+      left: 0;
+      background-image: url('../images/icons/arrow-prev.svg');
+      background-repeat: no-repeat;
+    }
+  }
+  &__next {    
+   padding-right: 15px;   
+   &::before {    
+    right: 0;
+    background-image: url('../images/icons/arrow-next.svg');
+    background-repeat: no-repeat;
+   }
+  }
+}
+

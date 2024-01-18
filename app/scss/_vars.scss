@@ -44,7 +44,7 @@ $bg:#f6f6f6;
   @extend %roboto-400;
   font-size: 16px;
   line-height: 26px;
-  padding: 14px 27px;
+  padding: 14px 27px;  
   cursor: pointer;
   border: 1px solid $accent;
   background-color: #fff;  
@@ -56,4 +56,12 @@ $bg:#f6f6f6;
 }
 @function min($numbers...){
   @return m#{i}n(#{$numbers});
+}
+
+%checkbox-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
 }
