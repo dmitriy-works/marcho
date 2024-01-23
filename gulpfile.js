@@ -63,7 +63,7 @@ function images() {
 function build() { 
   return src ([
     'app/**/*.html',
-    'app/css/style.min.css',
+    'app/css/*.css',
     'app/js/main.min.js',
   ], {base: 'app'}) /*base: 'app' означает, что в папке dist создадуться папки css и js в каждой из которой будет лежать соответсвующий файл style.min.css и main.min.js*/
   .pipe(dest('dist'))
@@ -75,7 +75,7 @@ function cleanDist() {
 
 
 function watching() {
-  watch(['app/scss/**/*.scss'], styles).on('change', browserSync.reload);
+  watch(['app/**/*.scss'], styles);
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
   watch(['app/**/*.html']).on('change', browserSync.reload);
 }
