@@ -130,7 +130,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipscg elit, sed do eiusmod tempor incididunt ut laborea et
                 dolore magna alqua. Quis ipsum suspendssem moa ultrices gravida.
               </p>
-              <form class="product-one__form product-filter" action="#">
+              <form class="product-one-form__product-filter" action="#">
                 <div class="product-filter__color">
                   <div class="product-filter__color-title">color:</div>
                   <label class="product-filter__color-label">
@@ -301,14 +301,403 @@
           </div>
         </div>
         <div class="product-tabs">
-
-        </div>
-        <div class="product-reviews">
-
+          <div class="product-tabs__top">
+            <a class="product-tabs__top-item" href="#tab-1">Description</a>
+            <a class="product-tabs__top-item" href="#tab-2">Additional information</a>
+            <a class="product-tabs__top-item product-tabs__top-item--active" href="#tab-3">Reviews</a>
+          </div>
+          <div class="product-tabs__content">
+            <div id="tab-1" class="product-tabs__content-item">1</div>
+            <div id="tab-2" class="product-tabs__content-item">2</div>
+            <div id="tab-3" class="product-tabs__content-item product-tabs__content-item--active">
+              <div class="comments">
+                <img class="comments__img" src="images/avatar/1.jpg" alt="avatar">
+                <div class="comments__content">
+                  <div class="comments__content-top">
+                    <p class="comments__content-name">Michle Jhon</p>
+                    <p class="comments__content-data">2 days ago</p>
+                    <div class="star comments__content-star" data-rateyo-rating="4"></div>
+                  </div>
+                  <p class="comments__content-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Qus ipsum speissei ultrices gravida. Risus commodo viverra maeenas accumsan
+                    lacus vel facilisis.
+                  </p>
+                  <a class="comments__content-reply" href="#">Reply</a>
+                </div>
+              </div>
+              <div class="comments">
+                <img class="comments__img" src="images/avatar/2.jpg" alt="avatar">
+                <div class="comments__content">
+                  <div class="comments__content-top">
+                    <p class="comments__content-name">Michle Jhon</p>
+                    <p class="comments__content-data">2 days ago</p>
+                    <div class="star comments__content-star" data-rateyo-rating="4"></div>
+                  </div>
+                  <p class="comments__content-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Qus ipsum speissei ultrices gravida. Risus commodo viverra maeenas accumsan
+                    lacus vel facilisis.
+                  </p>
+                  <a class="comments__content-reply" href="#">Reply</a>
+                </div>
+              </div>
+              <div class="comments">
+                <img class="comments__img" src="images/avatar/3.jpg" alt="avatar">
+                <div class="comments__content">
+                  <div class="comments__content-top">
+                    <p class="comments__content-name">Michle Jhon</p>
+                    <p class="comments__content-data">2 days ago</p>
+                    <div class="star comments__content-star" data-rateyo-rating="4"></div>
+                  </div>
+                  <p class="comments__content-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Qus ipsum speissei ultrices gravida. Risus commodo viverra maeenas accumsan
+                    lacus vel facilisis.
+                  </p>
+                  <a class="comments__content-reply" href="#">Reply</a>
+                </div>
+              </div>
+              <form class="comments-form" action="#">
+                <p class="comments-form__title">Add your review</p>
+                <div class="comments-form__rating">
+                  <span class="comments-form__rating-title">Your Rating</span>
+                  <label class="comments-form__label">
+                    <input class="comments-form__input" type="radio" name="star" checked>
+                    <span class="comments-form__radio">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
+                        height="16px" viewBox="0 0 18 16" version="1.1">
+                        <g id="surface1">
+                          <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 9.902344 0.5625 C 9.738281 0.21875 9.386719 0 9.003906 0 C 8.617188 0 8.273438 0.21875
+                            8.101562 0.5625 L 6.09375 4.695312 L 1.605469 5.359375 C 1.230469 5.414062 0.917969 5.679688
+                            0.804688 6.039062 C 0.6875 6.398438 0.78125 6.792969 1.050781 7.058594 L 4.304688 10.28125 L
+                            3.539062 14.835938 C 3.476562 15.210938 3.632812 15.589844 3.941406 15.8125 C 4.25 16.035156
+                            4.660156 16.0625 4.996094 15.882812 L 9.007812 13.742188 L 13.015625 15.882812 C 13.351562
+                            16.0625 13.761719 16.039062 14.070312 15.8125 C 14.382812 15.585938 14.539062 15.210938
+                            14.476562 14.835938 L 13.703125 10.28125 L 16.960938 7.058594 C 17.226562 6.792969 17.324219
+                            6.398438 17.207031 6.039062 C 17.085938 5.679688 16.777344 5.414062 16.402344 5.359375 L
+                            11.914062 4.695312 Z M 9.902344 0.5625 " />
+                        </g>
+                      </svg>
+                    </span>
+                  </label>
+                  <label class="comments-form__label">
+                    <input class="comments-form__input" type="radio" name="star">
+                    <span class="comments-form__radio">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
+                        height="16px" viewBox="0 0 18 16" version="1.1">
+                        <g id="surface1">
+                          <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 9.902344 0.5625 C 9.738281 0.21875 9.386719 0 9.003906 0 C 8.617188 0 8.273438 0.21875
+                            8.101562 0.5625 L 6.09375 4.695312 L 1.605469 5.359375 C 1.230469 5.414062 0.917969 5.679688
+                            0.804688 6.039062 C 0.6875 6.398438 0.78125 6.792969 1.050781 7.058594 L 4.304688 10.28125 L
+                            3.539062 14.835938 C 3.476562 15.210938 3.632812 15.589844 3.941406 15.8125 C 4.25 16.035156
+                            4.660156 16.0625 4.996094 15.882812 L 9.007812 13.742188 L 13.015625 15.882812 C 13.351562
+                            16.0625 13.761719 16.039062 14.070312 15.8125 C 14.382812 15.585938 14.539062 15.210938
+                            14.476562 14.835938 L 13.703125 10.28125 L 16.960938 7.058594 C 17.226562 6.792969 17.324219
+                            6.398438 17.207031 6.039062 C 17.085938 5.679688 16.777344 5.414062 16.402344 5.359375 L
+                            11.914062 4.695312 Z M 9.902344 0.5625 " />
+                        </g>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
+                        height="16px" viewBox="0 0 18 16" version="1.1">
+                        <g id="surface1">
+                          <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 9.902344 0.5625 C 9.738281 0.21875 9.386719 0 9.003906 0 C 8.617188 0 8.273438 0.21875
+                            8.101562 0.5625 L 6.09375 4.695312 L 1.605469 5.359375 C 1.230469 5.414062 0.917969 5.679688
+                            0.804688 6.039062 C 0.6875 6.398438 0.78125 6.792969 1.050781 7.058594 L 4.304688 10.28125 L
+                            3.539062 14.835938 C 3.476562 15.210938 3.632812 15.589844 3.941406 15.8125 C 4.25 16.035156
+                            4.660156 16.0625 4.996094 15.882812 L 9.007812 13.742188 L 13.015625 15.882812 C 13.351562
+                            16.0625 13.761719 16.039062 14.070312 15.8125 C 14.382812 15.585938 14.539062 15.210938
+                            14.476562 14.835938 L 13.703125 10.28125 L 16.960938 7.058594 C 17.226562 6.792969 17.324219
+                            6.398438 17.207031 6.039062 C 17.085938 5.679688 16.777344 5.414062 16.402344 5.359375 L
+                            11.914062 4.695312 Z M 9.902344 0.5625 " />
+                        </g>
+                      </svg>
+                    </span>
+                  </label>
+                  <label class="comments-form__label">
+                    <input class="comments-form__input" type="radio" name="star">
+                    <span class="comments-form__radio">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
+                        height="16px" viewBox="0 0 18 16" version="1.1">
+                        <g id="surface1">
+                          <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 9.902344 0.5625 C 9.738281 0.21875 9.386719 0 9.003906 0 C 8.617188 0 8.273438 0.21875
+                            8.101562 0.5625 L 6.09375 4.695312 L 1.605469 5.359375 C 1.230469 5.414062 0.917969 5.679688
+                            0.804688 6.039062 C 0.6875 6.398438 0.78125 6.792969 1.050781 7.058594 L 4.304688 10.28125 L
+                            3.539062 14.835938 C 3.476562 15.210938 3.632812 15.589844 3.941406 15.8125 C 4.25 16.035156
+                            4.660156 16.0625 4.996094 15.882812 L 9.007812 13.742188 L 13.015625 15.882812 C 13.351562
+                            16.0625 13.761719 16.039062 14.070312 15.8125 C 14.382812 15.585938 14.539062 15.210938
+                            14.476562 14.835938 L 13.703125 10.28125 L 16.960938 7.058594 C 17.226562 6.792969 17.324219
+                            6.398438 17.207031 6.039062 C 17.085938 5.679688 16.777344 5.414062 16.402344 5.359375 L
+                            11.914062 4.695312 Z M 9.902344 0.5625 " />
+                        </g>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
+                        height="16px" viewBox="0 0 18 16" version="1.1">
+                        <g id="surface1">
+                          <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 9.902344 0.5625 C 9.738281 0.21875 9.386719 0 9.003906 0 C 8.617188 0 8.273438 0.21875
+                            8.101562 0.5625 L 6.09375 4.695312 L 1.605469 5.359375 C 1.230469 5.414062 0.917969 5.679688
+                            0.804688 6.039062 C 0.6875 6.398438 0.78125 6.792969 1.050781 7.058594 L 4.304688 10.28125 L
+                            3.539062 14.835938 C 3.476562 15.210938 3.632812 15.589844 3.941406 15.8125 C 4.25 16.035156
+                            4.660156 16.0625 4.996094 15.882812 L 9.007812 13.742188 L 13.015625 15.882812 C 13.351562
+                            16.0625 13.761719 16.039062 14.070312 15.8125 C 14.382812 15.585938 14.539062 15.210938
+                            14.476562 14.835938 L 13.703125 10.28125 L 16.960938 7.058594 C 17.226562 6.792969 17.324219
+                            6.398438 17.207031 6.039062 C 17.085938 5.679688 16.777344 5.414062 16.402344 5.359375 L
+                            11.914062 4.695312 Z M 9.902344 0.5625 " />
+                        </g>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
+                        height="16px" viewBox="0 0 18 16" version="1.1">
+                        <g id="surface1">
+                          <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 9.902344 0.5625 C 9.738281 0.21875 9.386719 0 9.003906 0 C 8.617188 0 8.273438 0.21875
+                            8.101562 0.5625 L 6.09375 4.695312 L 1.605469 5.359375 C 1.230469 5.414062 0.917969 5.679688
+                            0.804688 6.039062 C 0.6875 6.398438 0.78125 6.792969 1.050781 7.058594 L 4.304688 10.28125 L
+                            3.539062 14.835938 C 3.476562 15.210938 3.632812 15.589844 3.941406 15.8125 C 4.25 16.035156
+                            4.660156 16.0625 4.996094 15.882812 L 9.007812 13.742188 L 13.015625 15.882812 C 13.351562
+                            16.0625 13.761719 16.039062 14.070312 15.8125 C 14.382812 15.585938 14.539062 15.210938
+                            14.476562 14.835938 L 13.703125 10.28125 L 16.960938 7.058594 C 17.226562 6.792969 17.324219
+                            6.398438 17.207031 6.039062 C 17.085938 5.679688 16.777344 5.414062 16.402344 5.359375 L
+                            11.914062 4.695312 Z M 9.902344 0.5625 " />
+                        </g>
+                      </svg>
+                    </span>
+                  </label>
+                  <label class="comments-form__label">
+                    <input class="comments-form__input" type="radio" name="star">
+                    <span class="comments-form__radio">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
+                        height="16px" viewBox="0 0 18 16" version="1.1">
+                        <g id="surface1">
+                          <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 9.902344 0.5625 C 9.738281 0.21875 9.386719 0 9.003906 0 C 8.617188 0 8.273438 0.21875
+                            8.101562 0.5625 L 6.09375 4.695312 L 1.605469 5.359375 C 1.230469 5.414062 0.917969 5.679688
+                            0.804688 6.039062 C 0.6875 6.398438 0.78125 6.792969 1.050781 7.058594 L 4.304688 10.28125 L
+                            3.539062 14.835938 C 3.476562 15.210938 3.632812 15.589844 3.941406 15.8125 C 4.25 16.035156
+                            4.660156 16.0625 4.996094 15.882812 L 9.007812 13.742188 L 13.015625 15.882812 C 13.351562
+                            16.0625 13.761719 16.039062 14.070312 15.8125 C 14.382812 15.585938 14.539062 15.210938
+                            14.476562 14.835938 L 13.703125 10.28125 L 16.960938 7.058594 C 17.226562 6.792969 17.324219
+                            6.398438 17.207031 6.039062 C 17.085938 5.679688 16.777344 5.414062 16.402344 5.359375 L
+                            11.914062 4.695312 Z M 9.902344 0.5625 " />
+                        </g>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
+                        height="16px" viewBox="0 0 18 16" version="1.1">
+                        <g id="surface1">
+                          <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 9.902344 0.5625 C 9.738281 0.21875 9.386719 0 9.003906 0 C 8.617188 0 8.273438 0.21875
+                            8.101562 0.5625 L 6.09375 4.695312 L 1.605469 5.359375 C 1.230469 5.414062 0.917969 5.679688
+                            0.804688 6.039062 C 0.6875 6.398438 0.78125 6.792969 1.050781 7.058594 L 4.304688 10.28125 L
+                            3.539062 14.835938 C 3.476562 15.210938 3.632812 15.589844 3.941406 15.8125 C 4.25 16.035156
+                            4.660156 16.0625 4.996094 15.882812 L 9.007812 13.742188 L 13.015625 15.882812 C 13.351562
+                            16.0625 13.761719 16.039062 14.070312 15.8125 C 14.382812 15.585938 14.539062 15.210938
+                            14.476562 14.835938 L 13.703125 10.28125 L 16.960938 7.058594 C 17.226562 6.792969 17.324219
+                            6.398438 17.207031 6.039062 C 17.085938 5.679688 16.777344 5.414062 16.402344 5.359375 L
+                            11.914062 4.695312 Z M 9.902344 0.5625 " />
+                        </g>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
+                        height="16px" viewBox="0 0 18 16" version="1.1">
+                        <g id="surface1">
+                          <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 9.902344 0.5625 C 9.738281 0.21875 9.386719 0 9.003906 0 C 8.617188 0 8.273438 0.21875
+                            8.101562 0.5625 L 6.09375 4.695312 L 1.605469 5.359375 C 1.230469 5.414062 0.917969 5.679688
+                            0.804688 6.039062 C 0.6875 6.398438 0.78125 6.792969 1.050781 7.058594 L 4.304688 10.28125 L
+                            3.539062 14.835938 C 3.476562 15.210938 3.632812 15.589844 3.941406 15.8125 C 4.25 16.035156
+                            4.660156 16.0625 4.996094 15.882812 L 9.007812 13.742188 L 13.015625 15.882812 C 13.351562
+                            16.0625 13.761719 16.039062 14.070312 15.8125 C 14.382812 15.585938 14.539062 15.210938
+                            14.476562 14.835938 L 13.703125 10.28125 L 16.960938 7.058594 C 17.226562 6.792969 17.324219
+                            6.398438 17.207031 6.039062 C 17.085938 5.679688 16.777344 5.414062 16.402344 5.359375 L
+                            11.914062 4.695312 Z M 9.902344 0.5625 " />
+                        </g>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
+                        height="16px" viewBox="0 0 18 16" version="1.1">
+                        <g id="surface1">
+                          <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 9.902344 0.5625 C 9.738281 0.21875 9.386719 0 9.003906 0 C 8.617188 0 8.273438 0.21875
+                            8.101562 0.5625 L 6.09375 4.695312 L 1.605469 5.359375 C 1.230469 5.414062 0.917969 5.679688
+                            0.804688 6.039062 C 0.6875 6.398438 0.78125 6.792969 1.050781 7.058594 L 4.304688 10.28125 L
+                            3.539062 14.835938 C 3.476562 15.210938 3.632812 15.589844 3.941406 15.8125 C 4.25 16.035156
+                            4.660156 16.0625 4.996094 15.882812 L 9.007812 13.742188 L 13.015625 15.882812 C 13.351562
+                            16.0625 13.761719 16.039062 14.070312 15.8125 C 14.382812 15.585938 14.539062 15.210938
+                            14.476562 14.835938 L 13.703125 10.28125 L 16.960938 7.058594 C 17.226562 6.792969 17.324219
+                            6.398438 17.207031 6.039062 C 17.085938 5.679688 16.777344 5.414062 16.402344 5.359375 L
+                            11.914062 4.695312 Z M 9.902344 0.5625 " />
+                        </g>
+                      </svg>
+                    </span>
+                  </label>
+                  <label class="comments-form__label">
+                    <input class="comments-form__input" type="radio" name="star">
+                    <span class="comments-form__radio">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
+                        height="16px" viewBox="0 0 18 16" version="1.1">
+                        <g id="surface1">
+                          <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 9.902344 0.5625 C 9.738281 0.21875 9.386719 0 9.003906 0 C 8.617188 0 8.273438 0.21875
+                            8.101562 0.5625 L 6.09375 4.695312 L 1.605469 5.359375 C 1.230469 5.414062 0.917969 5.679688
+                            0.804688 6.039062 C 0.6875 6.398438 0.78125 6.792969 1.050781 7.058594 L 4.304688 10.28125 L
+                            3.539062 14.835938 C 3.476562 15.210938 3.632812 15.589844 3.941406 15.8125 C 4.25 16.035156
+                            4.660156 16.0625 4.996094 15.882812 L 9.007812 13.742188 L 13.015625 15.882812 C 13.351562
+                            16.0625 13.761719 16.039062 14.070312 15.8125 C 14.382812 15.585938 14.539062 15.210938
+                            14.476562 14.835938 L 13.703125 10.28125 L 16.960938 7.058594 C 17.226562 6.792969 17.324219
+                            6.398438 17.207031 6.039062 C 17.085938 5.679688 16.777344 5.414062 16.402344 5.359375 L
+                            11.914062 4.695312 Z M 9.902344 0.5625 " />
+                        </g>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
+                        height="16px" viewBox="0 0 18 16" version="1.1">
+                        <g id="surface1">
+                          <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 9.902344 0.5625 C 9.738281 0.21875 9.386719 0 9.003906 0 C 8.617188 0 8.273438 0.21875
+                            8.101562 0.5625 L 6.09375 4.695312 L 1.605469 5.359375 C 1.230469 5.414062 0.917969 5.679688
+                            0.804688 6.039062 C 0.6875 6.398438 0.78125 6.792969 1.050781 7.058594 L 4.304688 10.28125 L
+                            3.539062 14.835938 C 3.476562 15.210938 3.632812 15.589844 3.941406 15.8125 C 4.25 16.035156
+                            4.660156 16.0625 4.996094 15.882812 L 9.007812 13.742188 L 13.015625 15.882812 C 13.351562
+                            16.0625 13.761719 16.039062 14.070312 15.8125 C 14.382812 15.585938 14.539062 15.210938
+                            14.476562 14.835938 L 13.703125 10.28125 L 16.960938 7.058594 C 17.226562 6.792969 17.324219
+                            6.398438 17.207031 6.039062 C 17.085938 5.679688 16.777344 5.414062 16.402344 5.359375 L
+                            11.914062 4.695312 Z M 9.902344 0.5625 " />
+                        </g>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
+                        height="16px" viewBox="0 0 18 16" version="1.1">
+                        <g id="surface1">
+                          <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 9.902344 0.5625 C 9.738281 0.21875 9.386719 0 9.003906 0 C 8.617188 0 8.273438 0.21875
+                            8.101562 0.5625 L 6.09375 4.695312 L 1.605469 5.359375 C 1.230469 5.414062 0.917969 5.679688
+                            0.804688 6.039062 C 0.6875 6.398438 0.78125 6.792969 1.050781 7.058594 L 4.304688 10.28125 L
+                            3.539062 14.835938 C 3.476562 15.210938 3.632812 15.589844 3.941406 15.8125 C 4.25 16.035156
+                            4.660156 16.0625 4.996094 15.882812 L 9.007812 13.742188 L 13.015625 15.882812 C 13.351562
+                            16.0625 13.761719 16.039062 14.070312 15.8125 C 14.382812 15.585938 14.539062 15.210938
+                            14.476562 14.835938 L 13.703125 10.28125 L 16.960938 7.058594 C 17.226562 6.792969 17.324219
+                            6.398438 17.207031 6.039062 C 17.085938 5.679688 16.777344 5.414062 16.402344 5.359375 L
+                            11.914062 4.695312 Z M 9.902344 0.5625 " />
+                        </g>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
+                        height="16px" viewBox="0 0 18 16" version="1.1">
+                        <g id="surface1">
+                          <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 9.902344 0.5625 C 9.738281 0.21875 9.386719 0 9.003906 0 C 8.617188 0 8.273438 0.21875
+                            8.101562 0.5625 L 6.09375 4.695312 L 1.605469 5.359375 C 1.230469 5.414062 0.917969 5.679688
+                            0.804688 6.039062 C 0.6875 6.398438 0.78125 6.792969 1.050781 7.058594 L 4.304688 10.28125 L
+                            3.539062 14.835938 C 3.476562 15.210938 3.632812 15.589844 3.941406 15.8125 C 4.25 16.035156
+                            4.660156 16.0625 4.996094 15.882812 L 9.007812 13.742188 L 13.015625 15.882812 C 13.351562
+                            16.0625 13.761719 16.039062 14.070312 15.8125 C 14.382812 15.585938 14.539062 15.210938
+                            14.476562 14.835938 L 13.703125 10.28125 L 16.960938 7.058594 C 17.226562 6.792969 17.324219
+                            6.398438 17.207031 6.039062 C 17.085938 5.679688 16.777344 5.414062 16.402344 5.359375 L
+                            11.914062 4.695312 Z M 9.902344 0.5625 " />
+                        </g>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
+                        height="16px" viewBox="0 0 18 16" version="1.1">
+                        <g id="surface1">
+                          <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 9.902344 0.5625 C 9.738281 0.21875 9.386719 0 9.003906 0 C 8.617188 0 8.273438 0.21875
+                            8.101562 0.5625 L 6.09375 4.695312 L 1.605469 5.359375 C 1.230469 5.414062 0.917969 5.679688
+                            0.804688 6.039062 C 0.6875 6.398438 0.78125 6.792969 1.050781 7.058594 L 4.304688 10.28125 L
+                            3.539062 14.835938 C 3.476562 15.210938 3.632812 15.589844 3.941406 15.8125 C 4.25 16.035156
+                            4.660156 16.0625 4.996094 15.882812 L 9.007812 13.742188 L 13.015625 15.882812 C 13.351562
+                            16.0625 13.761719 16.039062 14.070312 15.8125 C 14.382812 15.585938 14.539062 15.210938
+                            14.476562 14.835938 L 13.703125 10.28125 L 16.960938 7.058594 C 17.226562 6.792969 17.324219
+                            6.398438 17.207031 6.039062 C 17.085938 5.679688 16.777344 5.414062 16.402344 5.359375 L
+                            11.914062 4.695312 Z M 9.902344 0.5625 " />
+                        </g>
+                      </svg>
+                    </span>
+                  </label>
+                </div>
+                <div class="comments-form__box-input">
+                  <input class="comments-form__text-input" type="text" placeholder="Your name">
+                  <input class="comments-form__text-input" type="text" placeholder="E-mail address">
+                </div>
+                <textarea class="comments-form__textarea" placeholder="Your text here"></textarea>
+                <button class="comments-form__btn" type="submit">Leave Review</button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
+    <section class="related">
+      <div class="container">
+        <h3 class="related__title title">RELATED PRODUCTS</h3>
+        <div class="related__items">
+          <div class="products-item">
+            <div class="products-item__img-box">
+              <img class="products-item__images" src="images/products/products-9.jpg" alt="products">
+            </div>
+            <div class="products-item__wrapper-box">
+              <div class="products-item__box">
+                <div class="star" data-rateyo-rating="4"></div>
+                <h4 class="products-item__title">Baby Girls Dress Designs</h4>
+                <div class="products-item__price">
+                  <div class="products-item__old-price">$99.99</div>
+                  <div class="products-item__new-price">$79.99</div>
+                </div>
+              </div>
+              <div class="products-item__content-box">
+                <p class="products-item__text">Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi
+                  labore et dolore magna aliqua.</p>
+                <button class="products-item__btn">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="products-item products-item--sale">
+            <div class="products-item__img-box">
+              <img class="products-item__images" src="images/products/products-10.jpg" alt="products">
+            </div>
+            <div class="products-item__wrapper-box">
+              <div class="products-item__box">
+                <div class="star" data-rateyo-rating="4"></div>
+                <h4 class="products-item__title">Baby Girls Dress Designs</h4>
+                <div class="products-item__price">
+                  <div class="products-item__old-price">$99.99</div>
+                  <div class="products-item__new-price">$79.99</div>
+                </div>
+              </div>
+              <div class="products-item__content-box">
+                <p class="products-item__text">Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi
+                  labore et dolore magna aliqua.</p>
+                <button class="products-item__btn">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="products-item">
+            <div class="products-item__img-box">
+              <img class="products-item__images" src="images/products/products-11.jpg" alt="products">
+            </div>
+            <div class="products-item__wrapper-box">
+              <div class="products-item__box">
+                <div class="star" data-rateyo-rating="4"></div>
+                <h4 class="products-item__title">Baby Girls Dress Designs</h4>
+                <div class="products-item__price">
+                  <div class="products-item__old-price">$99.99</div>
+                  <div class="products-item__new-price">$79.99</div>
+                </div>
+              </div>
+              <div class="products-item__content-box">
+                <p class="products-item__text">Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi
+                  labore et dolore magna aliqua.</p>
+                <button class="products-item__btn">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="products-item products-item--sale">
+            <div class="products-item__img-box">
+              <img class="products-item__images" src="images/products/products-12.jpg" alt="products">
+            </div>
+            <div class="products-item__wrapper-box">
+              <div class="products-item__box">
+                <div class="star" data-rateyo-rating="4"></div>
+                <h4 class="products-item__title">Baby Girls Dress Designs</h4>
+                <div class="products-item__price">
+                  <div class="products-item__old-price">$99.99</div>
+                  <div class="products-item__new-price">$79.99</div>
+                </div>
+              </div>
+              <div class="products-item__content-box">
+                <p class="products-item__text">Lorem ipsum dolor sit amet, adipiscing elit, sed de eusmod utlitoi
+                  labore et dolore magna aliqua.</p>
+                <button class="products-item__btn">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <div class="footer">

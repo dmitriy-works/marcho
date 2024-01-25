@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1" height="13" viewBox="0 0 1 13">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #8d8d8d;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="line_shape" data-name="line shape" class="cls-1" d="M575,1724.21h1v13h-1v-13Z" transform="translate(-575 -1724.22)"/>
+</svg>
