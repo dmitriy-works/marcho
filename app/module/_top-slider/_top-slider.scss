@@ -1,0 +1,74 @@
+.top-slider {
+  background-image: url('../images/decor/top-slider-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $bg;
+  padding: 65px 0 45px;
+  &__container {
+    max-width: 1560px;
+    padding: 0 10px;
+    margin: 0 auto;
+  } 
+  &__item-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item-content {
+    padding-top: 125px;
+    padding-left: 175px;
+  }
+  &__item-title{
+    max-width: 670px;
+    color: $title;
+    @extend %roboto-700;
+    font-size: 58px;
+    line-height: 68px;
+    margin-bottom: 30px;
+  }
+  &__item-text {
+    max-width: 470px;
+    margin-bottom: 55px;
+  }
+  &__item-link {
+    @extend %btn;
+    padding: 14px 36px;
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: -70px;
+}
+  .slick-dots li {
+    display: inline-block;
+    padding: 0 5px;
+    line-height: 0;
+}
+  .slick-dots button {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    font-size: 0;
+    padding: 0;
+    border: none;
+    border: 1px solid transparent;
+    background-color: transparent;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background-color: $default;
+    }
+  }
+  .slick-active button {
+    border-color: $accent;
+    &::after {
+      background-color: $accent;
+      }    
+   }  
+}

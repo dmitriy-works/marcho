@@ -1,0 +1,55 @@
+.header {
+  padding: 40px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.menu {
+  &__list {
+    display: flex;
+  }
+  &__list-item + .menu__list-item{
+    padding-left: 35px;
+  }
+  &__list-link {
+    color: $title;
+    @extend %roboto-400;
+    padding-bottom: 0 12px 1px;
+    text-transform: uppercase;
+    transition: all .2s;
+    &:hover {
+      color: $accent;
+      border-bottom: 1px solid $accent;
+      @extend %roboto-700;
+    }
+    &--active {
+      color: $accent;
+      border-bottom: 1px solid $accent;
+      @extend %roboto-700;
+    }
+  }
+}
+.user-nav {
+  display: flex;
+  &__link {
+    position: relative;
+  }   
+  &__link + .user-nav__link {
+    padding-left: 25px;
+  }
+  &__num {
+    position: absolute;
+    top: -9px;
+    right: -14px;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: $accent;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
