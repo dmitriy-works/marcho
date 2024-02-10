@@ -13,6 +13,7 @@
   &__popup {    
     background-repeat: no-repeat;
     background-position: right center;
+    background-size: cover;
     max-width: 530px;
     width: 100%;
     min-height: 480px;
@@ -41,5 +42,34 @@
   }
   &__link {
     @extend %btn;
+  }
+}
+
+@media (max-width: 1050px) {
+  .video-fashion {
+    &__inner {
+      display: block;
+    }
+    &__popup {
+      max-width: 100%;
+      margin-bottom: 50px;
+      background-position: center top;
+    }
+    &__content {
+      max-width: 100%;
+    }
+  }  
+}
+
+@media (max-width: 620px) {
+  .video-fashion {
+    padding: 60px 0;
+    &__popup {
+      min-height: 270px;
+      margin-bottom: 40px;
+    }
+    &__subtitle {
+      font-size: 18px;
+    }
   }
 }

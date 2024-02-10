@@ -1,4 +1,5 @@
-$(function () {
+$(function () {  
+
   $('.top-slider__inner').slick({
     arrows: false,
     dots: true,
@@ -81,10 +82,12 @@ initializeClock('promo__clock', deadline);
 
     $('.button-list').on('click', function () {
       $('.products-item').addClass('products-item--list');
+      $('.shop-content__inner').addClass('shop-content__nogrid');
     });
 
     $('.button-grid').on('click', function () {
       $('.products-item').removeClass('products-item--list');
+      $('.shop-content__inner').removeClass('shop-content__nogrid');
     });
 
     $('.product-slide__thumb').slick({
@@ -101,6 +104,14 @@ initializeClock('promo__clock', deadline);
       draggable: false,
       arrows: false,
       fade: true,
+      responsive: [
+        {
+           breakpoint: 1051,
+            settings: {
+              draggable: true,
+          }
+        },
+      ]
     });
 
     $('.product-tabs__top-item').on('click', function (e) {
@@ -118,4 +129,16 @@ initializeClock('promo__clock', deadline);
       infinite: false,
     });
 
+    $('.menu__btn').on('click', function () {
+      $('.menu__list').toggleClass('menu__list--active');
+    })
+
+$('.title-accordeon').on('click', function () {
+    $(this).siblings().slideToggle();
+    $(this).toggleClass('active');
+})
+
     
+$('.shop__filter-btn').on('click', function () {
+    $('.shop__filters').slideToggle()
+})

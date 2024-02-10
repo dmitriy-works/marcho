@@ -92,3 +92,65 @@
     right: -14px;    
   }  
 }
+
+@media (max-width: 1230px) {
+  .blog {
+    &__items::before {
+      right: 0;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .blog {
+    &__items {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 30px;
+    }
+    &__item-box {
+      padding: 20px 15px;
+    }
+  }  
+}
+
+@media (max-width: 1050px) {
+  .blog {
+    &__items {      
+      grid-template-columns: repeat(2, 1fr);      
+    }
+    &__item-box {
+      padding: 20px 15px;
+    }
+    &__item {
+      max-width: 100%;
+      img {
+        width: 100%;        
+      }
+    }    
+  }
+}
+
+@media (max-width: 768px) {
+  .blog {
+    &__items {      
+      grid-template-columns: repeat(1, 1fr);      
+    }      
+  }
+}
+
+@media (max-width: 768px) {
+  .blog {
+    padding: 60px 0;
+    &__item-info {
+      display: block;
+    } 
+    &__item-author {
+      display: inline-block;
+      padding-bottom: 10px;
+    }  
+    &__item-imglink img {
+      min-height: 240px;
+    }
+  }
+}
